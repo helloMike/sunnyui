@@ -2,9 +2,12 @@ html{
     font-size:62.5%;
 }
 #top_nav{
+    /*
      width:100%;
      max-width:100%;
      min-width:135rem;
+     */
      height:8rem;
      border:1px solid #ccc;
+    background:rgb(68,88,247);
  }
