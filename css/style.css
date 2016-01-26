@@ -1,8 +1,12 @@
+*{
+    padding:0;
+    margin:0;
+}
 html{
     font-size:62.5%;
 }
 body{
-    background:rgb(255,255,255);
+    background:#FFFFFF;
     box-sizing:border-box;
 }
 /*---------顶部导航栏部分---------*/
@@ -19,17 +23,42 @@ body{
 #top_nav_content ul li{
     margin:1.2rem 0;
 }
+/*-------轮播图部分---------*/
+#carousel_section{
+    position:relative;
+}
 /*-------项目类别导航部分--------*/
 #project_class_section{
-    padding:10rem 0;
-    border-bottom:1px solid #ccc;
-    background-color:rgb(245,245,245);
+    text-align:center;
+    border-bottom:.1rem solid #ccc;
+    background-color:#FFFFFF;
 }
 #app,#web,#wx,#ar_vr,#next{
-    border-right:1px solid #ccc;
+    padding:9rem 0 9rem 0;
+    height:30rem;
+    border-right: .1rem solid #ccc;
+    border-bottom:.1rem solid #ccc;
+}
+#app p,#web p,#wx p,#ar_vr p,#next p{
+    height:7rem;
+    line-height:7rem;
+    font-size:2.6rem;
+    font-weight:300;
+    color:#9D9D9D;
+}
+#share{
+    padding:0;
+    height:30rem;
+    border-right:.1rem solid #ccc;
+    border-bottom:.1rem solid #ccc;
+}
+#share .share_section{
+    height:10rem;
+    line-height:10rem;
+    text-align:center;
 }
 /*-------体验设计部分--------*/
 #experience_design_section{
-    padding:30rem 0;
-    background-color:rgb(233,233,233);
+    background-color:#E9E9E9;
+    text-align:center;
 }
