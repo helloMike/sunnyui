@@ -9,7 +9,7 @@ body{
     background:#FFFFFF;
     box-sizing:border-box;
 }
-/*---------¶¥²¿µ¼º½À¸²¿·Ö---------*/
+/*---------å¯¼èˆªæ çš„å†…å®¹---------*/
 #top_nav{
     height:8rem;
     padding:0rem 2rem;
@@ -23,23 +23,25 @@ body{
 #top_nav_content ul li{
     margin:1.2rem 0;
 }
-/*-------ÂÖ²¥Í¼²¿·Ö---------*/
+/*-------è½®æ’­å›¾éƒ¨åˆ†---------*/
 #carousel_section{
-    position:relative;
+    /*position:relative;*/
+
 }
-/*-------ÏîÄ¿Àà±ğµ¼º½²¿·Ö--------*/
-#project_class_section{
-    text-align:center;
-    border-bottom:.1rem solid #ccc;
-    background-color:#FFFFFF;
+/*-------é¡¹ç›®ç±»åˆ«å¯¼èˆªéƒ¨åˆ†--------*/
+/*-----é—®é¢˜ä¸€ ä½¿ç”¨container-fluidï¼Œå®¹å™¨çš„å®½åº¦ä¸è§äº†ã€‚------*/
+#project_class_section .container{
+    width:100%;
 }
 #app,#web,#wx,#ar_vr,#next{
-    padding:9rem 0 9rem 0;
-    height:30rem;
-    border-right: .1rem solid #ccc;
-    border-bottom:.1rem solid #ccc;
+    text-align: center;
+    padding:8rem 0;
+    background-color:#FFFFFF;
+    border:.1rem solid #ccc;
 }
 #app p,#web p,#wx p,#ar_vr p,#next p{
+    padding:0;
+    margin:0;
     height:7rem;
     line-height:7rem;
     font-size:2.6rem;
@@ -48,17 +50,43 @@ body{
 }
 #share{
     padding:0;
-    height:30rem;
-    border-right:.1rem solid #ccc;
-    border-bottom:.1rem solid #ccc;
+    background-color:#FFFFFF;
+    border:.1rem solid #ccc;
 }
 #share .share_section{
     height:10rem;
     line-height:10rem;
     text-align:center;
 }
-/*-------ÌåÑéÉè¼Æ²¿·Ö--------*/
+/*-------ä½“éªŒè®¾è®¡éƒ¨åˆ†--------*/
 #experience_design_section{
+    padding:5rem 0 0 0;
     background-color:#E9E9E9;
     text-align:center;
+}
+#experience_design_section .container{
+    width:95%;
+    padding-top:5rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2rem;
+}
+#experience_design_section .container .item{
+    height:38rem;
+    padding:5rem 0 0 0;
+    background-color:#FFFFFF;
+}
+#experience_design_section .container .item p{
+    width:60%;
+    line-height:2.6rem;
+    text-align: left;
+    margin:2rem auto;
+}
+@media screen and (max-device-width: 400px){
+    #experience_design_section .container .item p{
+        width:80%;
+        line-height:2rem;
+        text-align: left;
+        margin:2rem auto;
+    }
 }
