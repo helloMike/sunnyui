@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sunnyui三映界面设计</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -44,8 +44,69 @@
             </div>
         </div>
     </nav>
-    <script  src="js/jquery.1.12.0.min.js"></script>
-    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
-    <script  src="js/bootstrap.min.js"></script>
+    <!--轮播图部分-->
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#">
+                        <img src="img/01.jpg" alt="First slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/02.jpg" alt="Second slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/03.jpg" alt="Third slide">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/04.jpg" alt="Fourth slide">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--项目类别导航部分-->
+    <div id="project_class_section">
+        <div class="container-fluid">
+            <div id="app" class="col-xs-6 col-md-4 col-lg-2">
+                <img src="img/app.png">
+            </div>
+            <div id="web" class="col-xs-6 col-md-4 col-lg-2">
+                <img src="img/web.png">
+            </div>
+            <div id="wx" class="col-xs-6 col-md-4 col-lg-2">
+                <img src="img/wx.png">
+            </div>
+            <div id="ar_vr" class="col-xs-6 col-md-4 col-lg-2">
+                <img src="img/ar_vr.png">
+            </div>
+            <div id="next" class="col-xs-6 col-md-4 col-lg-2">
+                <img src="img/next.png">
+            </div>
+            <div id="share" class="col-xs-6 col-md-4 col-lg-2"></div>
+        </div>
+    </div>
+    <!--体验设计部分-->
+    <div id="experience_design_section">
+
+    </div>
 </body>
+<script  src="js/jquery.1.12.0.min.js"></script>
+<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+<script  src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </html>
