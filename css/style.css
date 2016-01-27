@@ -23,13 +23,13 @@ body{
 #top_nav_content ul li{
     margin:1.2rem 0;
 }
-/*-------轮播图部分---------*/
+/*-------轮播图部�?---------*/
 #carousel_section{
     /*position:relative;*/
 
 }
 /*-------项目类别导航部分--------*/
-/*-----问题一 使用container-fluid，容器的宽度不见了。------*/
+/*-----问题�? 使用container-fluid，容器的宽度不见了�??------*/
 #project_class_section .container{
     width:100%;
 }
@@ -90,3 +90,49 @@ body{
         margin:2rem auto;
     }
 }
+/*-------sunnyui_design_section--------*/
+#sunnyui_design_section{
+    background:url("../img/sunnyui_design_bg.jpg") no-repeat top center transparent;
+}
+@media screen and (min-device-width: 1350px){
+    #sunnyui_design_section{
+        padding: 5rem 0 16rem 0;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+}
+@media screen and (max-device-width: 1350px){
+    #sunnyui_design_section{
+        padding: 5rem 0 10rem 0;
+        -webkit-background-size:cover;
+        background-size:cover;
+    }
+}
+#sunnyui_design_section .container{
+    text-align:center;
+    color:#FFFFFF;
+}
+#sunnyui_design_section .container h3{
+
+    line-height:4rem;
+}
+#sunnyui_design_section .container h5{
+    font-size:1.6rem;
+}
+#sunnyui_design_section .container p{
+    width:80%;
+    margin-top:3rem;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+#sunnyui_design_section .container .more button{
+    display:inline-block;
+    margin-top:3rem;
+    background-color:#41D696;
+    padding:1rem 5rem;
+    border-radius:.5rem;
+    border-width:0;
+    color:#FFFFFF;
+}
+/*-------footer_section--------*/
