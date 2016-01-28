@@ -2,6 +2,9 @@
     padding:0;
     margin:0;
 }
+a:hover{
+    text-decoration: none;
+}
 html{
     font-size:62.5%;
 }
@@ -23,13 +26,13 @@ body{
 #top_nav_content ul li{
     margin:1.2rem 0;
 }
-/*-------轮播图部�?---------*/
+/*-------轮播图部�?---------*/
 #carousel_section{
     /*position:relative;*/
 
 }
 /*-------项目类别导航部分--------*/
-/*-----问题�? 使用container-fluid，容器的宽度不见了�??------*/
+/*-----问题�? 使用container-fluid，容器的宽度不见了�??------*/
 #project_class_section .container{
     width:100%;
 }
@@ -136,3 +139,32 @@ body{
     color:#FFFFFF;
 }
 /*-------footer_section--------*/
+footer{
+    padding:3rem 0;
+}
+#footer_section_01 .container{
+    width:90%;
+}
+#logo{
+    float:left;
+    width:17%;
+    margin-right:2%;
+}
+#logo a{
+    display:inline-block;
+}
+#logo a img{
+    width:100%;
+}
+#sunnyui{
+    width:70%;
+    float:left;
+    display:inline-block;
+}
+#sunnyui ul{
+    list-style:none;
+}
+#sunnyui ul li{
+    display:inline-block;
+
+}
