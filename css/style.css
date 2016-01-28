@@ -5,14 +5,23 @@
 a:hover{
     text-decoration: none;
 }
+@font-face {
+    font-family: "awesome-font";
+    src:url(font-awesome-4.5.0/fonts/fontawesome-webfont.eot)
+    src:url(font-awesome-4.5.0/fonts/fontawesome-webfont.woff)
+        url(font-awesome-4.5.0/fonts/FontAwesome.otf)
+        url(font-awesome-4.5.0/fonts/fontawesome-webfont.ttf)
+}
 html{
     font-size:62.5%;
+
 }
 body{
     background:#FFFFFF;
     box-sizing:border-box;
+    font-family: "awesome-font",sans-serif;
 }
-/*---------导航栏的内容---------*/
+/*--------navigation----------*/
 #top_nav{
     height:8rem;
     padding:0rem 2rem;
@@ -26,18 +35,36 @@ body{
 #top_nav_content ul li{
     margin:1.2rem 0;
 }
-/*-------轮播图部�?---------*/
-#carousel_section{
-    /*position:relative;*/
-
+/*-------carousel_section---------*/
+#carousel_section img{
+    width:100%;
 }
-/*-------项目类别导航部分--------*/
-/*-----问题�? 使用container-fluid，容器的宽度不见了�??------*/
+/*iphone4&iphone5*/
+@media screen and (max-device-width: 374px){
+    .carousel-inner>.item>img,.carousel-inner>.item>a>img{
+        height:18rem;
+    }
+}
+/*iphone6&iphone6 plus*/
+@media screen and (min-device-width: 375px) and (max-device-width: 767px){
+    .carousel-inner>.item>img,.carousel-inner>.item>a>img{
+        height:20rem;
+    }
+}
+/*ipad &ipad Mini*/
+@media screen and (min-device-width: 768px){
+    .carousel-inner>.item>img,.carousel-inner>.item>a>img{
+        height:auto;
+    }
+}
+/*-------project_class_section--------*/
+/*-----use contain-fluid will make some problems------*/
 #project_class_section .container{
     width:100%;
 }
 #app,#web,#wx,#ar_vr,#next{
     text-align: center;
+    height:30.2rem;
     padding:8rem 0;
     background-color:#FFFFFF;
     border:.1rem solid #ccc;
@@ -61,7 +88,7 @@ body{
     line-height:10rem;
     text-align:center;
 }
-/*-------体验设计部分--------*/
+/*-------experience_design_section--------*/
 #experience_design_section{
     padding:5rem 0 0 0;
     background-color:#E9E9E9;
@@ -99,7 +126,7 @@ body{
 }
 @media screen and (min-device-width: 1350px){
     #sunnyui_design_section{
-        padding: 5rem 0 16rem 0;
+        padding: 5rem 0 12rem 0;
         -webkit-background-size: 100% auto;
         background-size: 100% auto;
     }
@@ -138,33 +165,161 @@ body{
     border-width:0;
     color:#FFFFFF;
 }
-/*-------footer_section--------*/
+/*-------footer--------*/
 footer{
-    padding:3rem 0;
+    padding:5rem 0;
 }
-#footer_section_01 .container{
-    width:90%;
+    /*-------footer_section_01--------*/
+    #footer_section_01 .container{
+        width:100%;
+    }
+    #section_01,#section_02,#section_03{
+        margin-top:1rem;
+    }
+        /*-------section_01--------*/
+        #logo{
+            width:18%;
+            float:left;
+            margin-right:2%;
+        }
+        #logo a{
+            display:inline-block;
+        }
+        #logo a img{
+            width:100%;
+        }
+        #sunnyui{
+            width:80%;
+            float:left;
+        }
+        #sunnyui_logo{
+            width:50%;
+        }
+        #sunnyui_logo a{
+            display:inline-block;
+        }
+        #sunnyui_logo a img{
+            width:100%;
+        }
+        #sunnyui ul{
+            list-style:none;
+        }
+        #sunnyui ul li{
+            display:inline-block;
+            margin-right:2%;
+            margin-top:3%;
+        }
+        /*-------section_02--------*/
+        #section_02 p{
+            font-size:1.4rem;
+            font-weight:800;
+            color:#BFBFBF;
+            text-shadow:0px 1px 1px #ccc;
+            margin:0;
+        }
+        #section_02 ul{
+            width:80%;
+            list-style:none;
+        }
+        #section_02 ul li{
+            display:inline-block;
+            margin-right:2%;
+            margin-top:3%;
+        }
+        /*-------section_03--------*/
+        #section_03 p{
+            font-size:1.4rem;
+            margin:0;
+            color:#7B7B7B;
+        }
+        #section_03 p span{
+            font-size:1.4rem;
+            font-weight:800;
+            color:#BFBFBF;
+        }
+        #section_03 ul{
+            list-style:none;
+            width:80%;
+        }
+        #section_03 ul li{
+            display:inline-block;
+            margin-right:5%;
+        }
+        #section_03 ul li i{
+            font-size:1.4rem;
+        }
+    /*-------footer_section_02--------*/
+    #footer_section_02{
+        padding:2.5rem 0 1rem 0;
+        width:95%;
+        margin:0 auto;
+    }
+            /*-------section_01--------*/
+        #footer_section_02 .section_01 {
+            height:4rem;
+        }
+        #phone_version{
+            float:left;
+            font-weight:bold;
+            color:#7B7B7B;
+        }
+        #phone_number{
+            float:right;
+            font-weight:bold;
+            color:#7B7B7B;
+        }
+        #footer_section_02 .section_01 i{
+            font-size:3rem;
+        }
+        #footer_section_02 .section_01 span{
+            display:inline-block;
+            position: relative;
+            top:-.5rem;
+        }
+        /*-------section_02--------*/
+        #footer_section_02 .section_02{
+            float:right;
+            font-size:1.1rem;
+            color:#BFBFBF;
+        }
+@media screen and (min-device-width: 1051px){
+    #sunnyui ul li a,#section_02 ul li a{
+        display:inline-block;
+        color:#646464;
+        font-size:1.2rem;
+        margin-top:7%;
+    }
+    #section_03 ul li{
+        color:#646464;
+        font-size:1.2rem;
+        margin-top:3%;
+    }
 }
-#logo{
-    float:left;
-    width:17%;
-    margin-right:2%;
-}
-#logo a{
-    display:inline-block;
-}
-#logo a img{
-    width:100%;
-}
-#sunnyui{
-    width:70%;
-    float:left;
-    display:inline-block;
-}
-#sunnyui ul{
-    list-style:none;
-}
-#sunnyui ul li{
-    display:inline-block;
+@media screen and (min-device-width: 768px) and (max-device-width: 1050px){
 
+    #sunnyui ul li a,#section_02 ul li a{
+        color:#646464;
+        font-size:1rem;
+        margin-top:3%;
+    }
+    #section_03 ul li{
+        font-size:1rem;
+        color:#646464;
+        margin-top:4%;
+    }
+}
+@media screen and (max-device-width:768px){
+    #sunnyui ul li a,#section_02 ul li a{
+        color:#646464;
+        font-size:0.9rem;
+        margin-top:2%;
+    }
+    #section_02 ul, #section_03 ul{
+        margin-left:20%;
+    }
+    #section_03 ul li{
+        color:#646464;
+        font-size:0.9rem;
+        margin-top:5%;
+    }
 }
