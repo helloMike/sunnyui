@@ -23,8 +23,8 @@ body{
 }
 /*--------navigation----------*/
 #top_nav{
-    height:10rem;
-    padding:2rem 2rem;
+    height:8rem;
+    padding:1rem 1rem;
     line-height:8rem;
     background-color:transparent;
     border-width:0;
@@ -34,13 +34,46 @@ body{
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
+.navbar-brand{
+    width:7rem;
+    overflow:hidden;
+    -webkit-transition: width .5s ease-in-out 0s;
+    -moz-transition: width .5s ease-in-out 0s;
+    -ms-transition: width .5s ease-in-out 0s;
+    -o-transition: width .5s ease-in-out 0s;
+    transition: width .5s ease-in-out 0s;
+    padding:1.5rem 0 1.5rem 1.1rem;
+}
+.navbar-brand:hover{
+    width:20rem;
+}
 .navbar-brand,.navbar-nav > li > a{
     padding-top:0;
 }
+@media screen and (max-device-width:768px){
+    #top_nav{
+        height:5rem;
+        padding:0;
+    }
+    #top_nav .container-fluid{
+        background:rgba(0,0,0,.5);
+        width:100%;
+    }
+    #top_nav .container-fluid .navbar-brand{
+        margin-top:.5rem;
+    }
+    #top_nav .container-fluid .navbar-toggle{
+        margin-top:1.2rem;
+    }
+    .navbar-nav > li > a{
+        padding:1.5rem 0 1.5rem 3rem;
+    }
+}
+/*
+   (for scroll_event)
 #top_nav.on{
     height:7rem;
     padding:1rem 4rem;
-    /*background:rgba(63,48,225,0.5);*/
     background:rgba(0,0,0,0.5);
 }
 @media screen and (max-device-width:769px){
@@ -57,6 +90,7 @@ body{
 #top_nav_content ul li{
     margin:1.2rem 0;
 }
+*/
 /*-------carousel_section---------*/
 #carousel_section img{
     width:100%;
@@ -90,15 +124,31 @@ body{
     padding:8rem 0;
     background-color:#FFFFFF;
     border:.1rem solid #ccc;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+#app:hover,#web:hover,#wx:hover,#ar_vr:hover,#next:hover{
+    background-color: #E9E9E9;
 }
 #app p,#web p,#wx p,#ar_vr p,#next p{
     padding:0;
     margin:0;
     height:7rem;
     line-height:7rem;
-    font-size:2.6rem;
     font-weight:300;
     color:#9D9D9D;
+}
+.p1{
+    font-size: 2.6rem;
+}
+.p2{
+    font-size:2rem;
+}
+.p_hover_before{
+    display:none;
 }
 #share{
     padding:0;
@@ -144,7 +194,7 @@ body{
 }
 /*-------sunnyui_design_section--------*/
 #sunnyui_design_section{
-    background:url("../img/sunnyui_design_bg.jpg") no-repeat top center transparent;
+    background:url("../img/sunnyui_design/sunnyui_design_bg.jpg") no-repeat top center transparent;
 }
 @media screen and (min-device-width: 1350px){
     #sunnyui_design_section{
