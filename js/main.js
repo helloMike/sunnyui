@@ -35,28 +35,36 @@ $(document).ready(function(){
     //project_class_section ----------------class
     $("#project_class_section > div > div:not(:last-child)").each(function(){
         $(this).hover(function(){
-            $(this).find('.p1').removeClass('flipInX').addClass('flipOutX').css('display','none');
-            $(this).find('.p2').removeClass('p_hover_before').removeClass('flipOutX').addClass('flipInX');
+            /*
+            $(this).find('.p1').removeClass('slideInUp').addClass('slideOutUp').css('display','none');
+            $(this).find('.p2').removeClass('p_hover_before').removeClass('slideOutUp').addClass('slideInUp');
         },function(){
-            $(this).find('.p2').removeClass('flipInx').addClass('flipOutX').addClass('p_hover_before');
-            $(this).find('.p1').css('display','block').removeClass('flipOutX').addClass('flipInX');
+            $(this).find('.p2').removeClass('slideOutUp').addClass('slideInUp').addClass('p_hover_before');
+            $(this).find('.p1').css('display','block').removeClass('slideOutUp').addClass('slideInUp');
+        })*/
+            $(this).find('.p1').stop().fadeOut(0,function(){
+                $(this).parent().find('.p2').stop().fadeIn(100);
+            });
+
+     },function() {
+            $(this).find('.p2').stop().fadeOut(0,function(){
+                $(this).parent().find('.p1').stop().fadeIn(100);
+            });
         })
-     })
+    })
         //project_class_section--------------share
     $('#share > div').each(function(){
-        /*
+        var $img_01 = $(this).find('img:first-child');
+        var $img_02 = $(this).find('img:last-child');
         $(this).hover(function(){
-            alert('in');
+            $img_01.stop().fadeOut(0,function(){
+                $img_02.stop().fadeIn(500);
+            })
+
         },function(){
-            alert('out');
-        })*/
-        var index = $(this).index() + 1;
-        var src_hover = 'img/share/share_0'+ index + '_hover.png';
-        var src = 'img/share/share_0' + index + '.png';
-        $(this).hover(function(){
-            $(this).find('img').attr('src',src_hover);
-        },function(){
-            $(this).find('img').attr('src',src);
+            $img_02.stop().fadeOut(0,function(){
+                $img_01.stop().fadeIn(1000);
+            })
         })
     })
 });
