@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sunnyui动态dynamics</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/dynamics.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="left_part">
+            <div class="left_part_content">
+                    <div class="logo">
+                        <img src="img/dynamics/logo.png">
+                    </div>
+                    <ul class="content_nav_01">
+                        <li class="active">
+                            <p class="title_01">项目动态</p>
+                            <p class="title_02">Project dynamics</p>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <p class="title_01">团队活动</p>
+                            <p class="title_02">Team activities</p>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <p class="title_01">设计沙龙 </p>
+                            <p class="title_02">Design Salon</p>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <p class="title_01">VR/AR研究</p>
+                            <p class="title_02">VR&AR Research</p>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                    </ul>
+                    <ul class="content_nav_02">
+                        <li>
+                            <a href="#">
+                                <span>案例作品</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>关于三映</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>合作联系</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+        <div class="right_part">
+            <div class="main">
+                <h1 class="main_title">Project dynamics</h1>
+                <div class="main_item">
+                    <div class="item_pic">
+                        <a href="#">
+                            <img src="img/dynamics/project_01.jpg">
+                        </a>
+                    </div>
+                    <div class="item_content">
+                        <a href="#">
+                            <h2>nicedesign集体趴之探寻潭柘寺&定都峰</h2>
+                        </a>
+                        <h4>团队活动 2015-10-17</h4>
+                        <p>2015年的夏末，9个人3辆车的小分队出发了，目的地：潭柘寺&定都峰。9月的北京，雾霾一扫而空，天空湛蓝。奔驰在郊野的山路上，格桑花星星点点散落。自由之旅，轻快而放肆。
+                        <a href="#">查看全文</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="main_item">
+                    <div class="item_pic">
+                        <a href="#">
+                            <img src="img/dynamics/project_01.jpg">
+                        </a>
+                    </div>
+                    <div class="item_content">
+                        <a href="#">
+                            <h2>nicedesign集体趴之探寻潭柘寺&定都峰</h2>
+                        </a>
+                        <h4>团队活动 2015-10-17</h4>
+                        <p>2015年的夏末，9个人3辆车的小分队出发了，目的地：潭柘寺&定都峰。9月的北京，雾霾一扫而空，天空湛蓝。奔驰在郊野的山路上，格桑花星星点点散落。自由之旅，轻快而放肆。
+                            <a href="#">查看全文</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="main_item">
+                    <div class="item_pic">
+                        <a href="#">
+                            <img src="img/dynamics/project_01.jpg">
+                        </a>
+                    </div>
+                    <div class="item_content">
+                        <a href="#">
+                            <h2>nicedesign集体趴之探寻潭柘寺&定都峰</h2>
+                        </a>
+                        <h4>团队活动 2015-10-17</h4>
+                        <p>2015年的夏末，9个人3辆车的小分队出发了，目的地：潭柘寺&定都峰。9月的北京，雾霾一扫而空，天空湛蓝。奔驰在郊野的山路上，格桑花星星点点散落。自由之旅，轻快而放肆。
+                            <a href="#">查看全文</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.1.12.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.content_nav_01>li').click(function(){
+            $(this).addClass('active')
+                    .siblings().removeClass('active');
+        })
+    })
+</script>
+</html>

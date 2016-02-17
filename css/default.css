@@ -1,0 +1,33 @@
+@charset "utf-8";
+*{
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: "awesome-font";
+    src:url(font-awesome/4.2.0/fonts/fontawesome-webfont.eot)
+    src:url(font-awesome/4.2.0/fonts/fontawesome-webfont.woff),
+        url(font-awesome/4.2.0/fonts/FontAwesome.otf),
+        url(font-awesome/4.2.0/fonts/fontawesome-webfont.ttf)
+}
+i{
+    font-family: "awesome-font";
+}
+html{
+    font-size:62.5%;
+
+}
+body{
+    background:#FFFFFF;
+    box-sizing:border-box;
+}
+body,h1,h2,h3,h4,p,span,a{
+    font-family:"微软雅黑","Microsoft YaHei";
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    outline-style:none;
+}

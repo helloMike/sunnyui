@@ -1,30 +1,3 @@
-@charset "utf-8";
-*{
-    padding:0;
-    margin:0;
-}
-@font-face {
-    font-family: "awesome-font";
-    src:url(font-awesome/fonts/fontawesome-webfont.eot)
-    src:url(font-awesome/fonts/fontawesome-webfont.woff)
-        url(font-awesome/fonts/FontAwesome.otf)
-        url(font-awesome/fonts/fontawesome-webfont.ttf)
-}
-i{
-    font-family: "awesome-font";
-}
-html{
-    font-size:62.5%;
-
-}
-body{
-    background:#FFFFFF;
-    box-sizing:border-box;
-
-}
-body,h1,h2,h3,h4,p,span,a{
-    font-family:"微软雅黑","Microsoft YaHei";
-}
 /*--------navigation----------*/
 #top_nav{
     height:80px;
@@ -102,31 +75,6 @@ body,h1,h2,h3,h4,p,span,a{
     *margin-left:5px;
     *zoom:1;
 }
-
-/*iphone4&iphone5*/
-/*
-@media screen and (max-width: 374px){
-    .carousel-inner>.item>img,.carousel-inner>.item>a>img{
-        height:18rem;
-    }
-}
-*/
-/*iphone6&iphone6 plus*/
-/*
-@media screen and (min-width: 375px) and (max-width: 767px){
-    .carousel-inner>.item>img,.carousel-inner>.item>a>img{
-        height:20rem;
-    }
-}
-*/
-/*ipad &ipad Mini*/
-/*
-@media screen and (min-width: 768px){
-    .carousel-inner>.item>img,.carousel-inner>.item>a>img{
-        height:auto;
-    }
-}
-*/
 /*-------project_class_section--------*/
 /*-----use contain-fluid will make some problems------*/
 #project_class_section .container{
@@ -245,12 +193,6 @@ body,h1,h2,h3,h4,p,span,a{
     #app,#web,#wx,#ar_vr,#next,#share{
         width:50%;
     }
-    /*#share .share_section > img{*/
-        /*width:40px;*/
-        /*height:40px;*/
-        /*top:0px;*/
-        /*margin-left:13px;*/
-    /*}*/
 }
 @media screen and (max-width:450px){
     #app,#web,#wx,#ar_vr,#next{
