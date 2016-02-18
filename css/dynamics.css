@@ -6,7 +6,7 @@
     position:fixed;
     left:0;
     top:0;
-    width:22%;
+    width:24%;
     height:100%;
     background-color:#2B91F6;
     padding-top:40px;
@@ -113,7 +113,7 @@ ul.content_nav_02>li:hover>a>i{
 }
 /*------------right_part--------------*/
 .right_part{
-    width:78%;
+    width:76%;
     *width:75%;
     height:auto;
     padding:50px 0 0 50px;

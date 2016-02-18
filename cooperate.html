@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sunnyui合作联系</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cooperate.css">
+</head>
+<body>
+<!--left-part-->
+    <div class="left_part">
+        <div class="left_part_content">
+            <div class="logo">
+                <img src="img/about_us/logo.png">
+            </div>
+            <ul class="content_nav_01">
+                <li>
+                    <p class="title_01">关于SUNNYUI</p>
+                    <p class="title_02">About us</p>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li  class="active">
+                    <p class="title_01">合作联系</p>
+                    <p class="title_02">Cooperate</p>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <p class="title_01">工作机会</p>
+                    <p class="title_02">Join us</p>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <p class="title_01">友情连接</p>
+                    <p class="title_02">Friendship link</p>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+            </ul>
+            <ul class="content_nav_02">
+                <li>
+                    <a href="#">
+                        <span>案例作品</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>动态</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </a>
+        </div>
+    </div>
+<!--right-part-->
+<div class="right_part">
+    <div class="main">
+        <h1 class="main_title">Cooperate</h1>
+        <div class="main_content">
+            <div class="content_think">
+                <div class="pic">
+                    <img src="img/cooperate/pic.png">
+                </div>
+                <div class="content">
+                    <p>在与我们联系之前，
+                        <br/>
+                    希望您先花5分钟时间，对我们设计水平有初步的认识和评估！
+                        <br/>
+                    <span>并确保您真的乐意为我们的想象力支付费用。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="content_form">
+                <h1>快速提交您的需求</h1>
+                <form action="#" method="got">
+                    <input type="text" placeholder="您的姓名" name="username">
+                    <input type="email" placeholder="邮箱" name="email">
+                    <input type="telephone" placeholder="电话" name="phone">
+                    <input type="text" placeholder="公司名称" name="company">
+                    <textarea name="require" placeholder="您的需求描述..."></textarea>
+                    <div class="form_bottom_content">
+                        <button type="submit" value="发布您的需求">发布您的需求</button>
+                        <p>或者发送商务咨询到邮箱：<span>chenw@sunnyui.com</span></p>
+                    </div>
+                </form>
+            </div>
+            <div class="content_visit">
+                <h1>拜访我们</h1>
+                <div class="address">
+                    <img src="img/cooperate/address.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.1.12.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.content_nav_01>li').click(function(){
+            $(this).addClass('active')
+                    .siblings().removeClass('active');
+        })
+    })
+</script>
+</html>
