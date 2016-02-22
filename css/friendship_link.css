@@ -159,20 +159,57 @@ ul.link_logo>li{
     padding-right: 25px;
     line-height:45px;
 }
-.content_scope{
+.button_link{
     height:100px;
     border-bottom:1px solid #EEEEEE;
-    padding:30px 0;
-    margin-bottom:50px;
 }
-.content_scope>p{
-    text-indent:20px;
-    color:#999999;
-    font-size:11px;
-    line-height:20px;
+.words_link{
+    width:inherit;
+    height:100px;
+    /*border:1px solid #ccc;*/
 }
-.content_scope>p>a{
-    color:#007DE5;
+.button_link .button_link_left,.words_link .words_link_left{
+    width:120px;
+    height:inherit;
+    text-align:left;
+    /*border:1px solid #ccc;*/
+}
+.button_link .button_link_left,.button_link .button_link_right,.words_link .words_link_left,.words_link .words_link_right{
+    padding:30px 0 0 0 ;
+    display:inline-block;
+    float:left;
+}
+.button_link .button_link_left>p,.words_link .words_link_left>p{
+    margin-top:5px;
+    color:#969C9C;
+    letter-spacing:1px;
+    font-size:12px;
+}
+.words_link .words_link_left>a{
     text-decoration: underline;
+    color:#096CE3;
+    font-size:16px;
+    font-weight:bold;
+}
+.button_link .button_link_left>button{
+    width:80px;
+    height:30px;
+    background:url('../img/friendship_link/button_link.png');
+    border:none;
+}
+.button_link .button_link_right,.words_link .words_link_right{
+    width:685px;
+    height:inherit;
+    margin-left:30px;
+}
+.button_link .button_link_right>input,.words_link .words_link_right>input{
+    display:block;
+    width:650px;
+    height:20px;
+    margin-top:10px;
+    color:#919C96;
+    padding-left:5px;
+    border:1px solid #E6E6E6;
+    background-color:#F7F7F7;
 }
 

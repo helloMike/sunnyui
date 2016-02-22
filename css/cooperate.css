@@ -216,9 +216,68 @@ h1.main_title{
     color:#2691F1;
 }
 .content_visit .address{
-    width:655px;
-    height:330px;
+    width:700px;
+    height:500px;
     overflow:hidden;
-    /*border:1px solid #CCC;*/
     margin-bottom:100px;
 }
+.address .address_header{
+    width:700px;
+    height:50px;
+    margin:10px 0 30px 0;
+}
+.address_header .header_part{
+    display:inline-block;
+    float:left;
+    width:220px;
+    height:50px;
+    margin-right:10px;
+    text-align:left;
+    /*border:1px solid #ccc;*/
+}
+.header_part h1{
+    margin:0;
+    font-size:22px;
+    letter-spacing:8px;
+    color:#2691F1;
+    font-weight:400;
+}
+#part_01 p{
+    font-size:14px;
+    color:#2691F1;
+}
+#part_02 p{
+    color:#686868;
+    font-size:14px;
+    line-height:25px;
+}
+#part_03 p{
+    color:#AEAEAE;
+    font-size:16px;
+    line-height:25px;
+    font-weight:bold;
+    margin-left:40px;
+}
+#part_03 p>i.icon_phone{
+    font-size:23px;
+}
+#part_03 p>i.icon_qq{
+    font-size:21px;
+}
+/*--map--*/
+.iw_poi_title {
+    color:#CC5522;
+    font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    padding-right:13px;
+    white-space:nowrap;
+}
+.iw_poi_content {
+    font:12px arial,sans-serif;
+    overflow:visible;
+    padding-top:4px;
+    white-space:-moz-pre-wrap;
+    word-wrap:break-word;
+}
+

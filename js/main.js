@@ -47,7 +47,7 @@ $(document).ready(function(){
 
         //project_class_section--------------share
 
-    $('#share > div').each(function(){
+    $('#share > a').each(function(){
         var $img_01 = $(this).find('img:first-child');
         var $img_02 = $(this).find('img:last-child');
         $(this).hover(function(){
@@ -57,6 +57,16 @@ $(document).ready(function(){
             $img_01.stop().fadeIn(300,'swing');
             $img_02.stop().fadeOut(300,'swing');
         })
+    })
+    $('#share > a').click(function(){
+        var index = $(this).index();
+        if(index === 2){
+            window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));
+        }else if(index === 0){
+            window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank');
+         }else if(index === 1){
+            window.open('http://s.jiathis.com/qrcode.php?url=http%3A%2F%2Flocalhost%3A63342%2Fsunnyui%2Findex.html%23');
+        }
     })
         //sunnyui_design_section-----------------视觉差
     /*                 视觉差效果一

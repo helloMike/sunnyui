@@ -99,6 +99,9 @@
     -o-transition: background-color 1s;
     transition: background-color 1s;
 }
+#app>a,#web>a,#wx>a,#ar_vr>a,#next>a{
+    outline:none;
+}
 #app:hover,#web:hover,#wx:hover,#ar_vr:hover,#next:hover{
     background-color: #FFFFFF;
 }
@@ -107,6 +110,7 @@
     margin-top:4%;
     text-align:left;
 }
+
 #app .title p ,#web .title p ,#wx .title p ,#ar_vr .title p ,#next .title p{
     position:absolute;
     height:30px;
@@ -135,6 +139,7 @@
     background-color:#F0F0F0;
 }
 #share .share_section{
+    display:block;
     width: 80px;
     height:80px;
     border-radius:50%;
@@ -150,8 +155,9 @@
     -o-transition: background .5s;
     transition: background .5s;
     position:relative;
+    outline:none;
 }
-#share .share_section > img{
+#share .share_section>img{
     width:40px;
     height:40px;
     /*margin:19px 0;*/
@@ -160,7 +166,7 @@
     left:0;
     margin-left:18px;
 }
-#share .share_section > img.img_hover_before{
+#share .share_section>img.img_hover_before{
     display:none;
 }
 @media screen and (max-width:1250px){
@@ -407,14 +413,14 @@ footer i,footer span{
         #sunnyui ul li{
             display:inline-block;
             float:left;
-            margin-right:2%;
+            margin-right:4%;
 }
         /*-------section_02--------*/
         #section_02 p{
             font-size:14px;
             font-weight:800;
             color:#BFBFBF;
-            text-shadow:0px 1px 1px #ccc;
+            /*text-shadow:0px 1px 1px #ccc;*/
             margin:0;
         }
         #section_02 ul{
@@ -424,7 +430,7 @@ footer i,footer span{
         #section_02 ul li{
             display:inline-block;
             float:left;
-            margin-right:2%;
+            margin-right:4%;
         }
         /*-------section_03--------*/
         #section_03 p{
