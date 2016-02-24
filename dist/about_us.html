@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sunnyiui关于我们</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" type="text/css" href="css/about_us.css">
+
+</head>
+<body>
+    <!--left-part-->
+    <div class="left_part">
+        <div class="left_part_content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/about_us/logo.png">
+            </a>
+        </div>
+        <ul class="content_nav_01">
+            <li>
+                <a href="about_us.html">
+                    <p class="title_01">关于SUNNYUI</p>
+                    <p class="title_02">About us</p>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="cooperate.html">
+                    <p class="title_01">合作联系</p>
+                    <p class="title_02">Cooperate</p>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="join_us.html">
+                    <p class="title_01">工作机会</p>
+                    <p class="title_02">Join us</p>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="friendship_link.html">
+                    <p class="title_01">友情连接</p>
+                    <p class="title_02">Friendship link</p>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="content_nav_02">
+            <li>
+                <a href="demo.html" target="_blank">
+                    <span>案例作品</span>
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="dynamics.html" target="_blank">
+                    <span>动态</span>
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+        </a>
+    </div>
+    </div>
+    <!--right-part-->
+    <div class="right_part">
+        <div class="main">
+            <h1 class="main_title">About us</h1>
+            <div class="main_content">
+                <p>
+                    Sunnyui Design（三映界面设计）成立于2013年，我们是一家专注用户体验设计与互联网品牌建设的设计公司，创立至今为众多位客户提供了创新与专业的设计方案。设计服务范围包括：交互原型设计、产品视觉设计、用户体验设计咨询、前沿VR设计项目研究、互联网营销设计决解方案等。我们的价值与宗旨是为用户和客户打造最阳光活力的设计，用设计提升产品和企业价值。
+                </p>
+                <h2>当你在困惑如何让设计更好时，就来联系三映吧,
+                    <p>我们专注于这一面！</p>
+                </h2>
+                <h1 class="title_01">我们的团队</h1>
+                <p>我们是追求品质与力求不断超越自己的团队，每一位成员也是亲密的伙伴，与公司一起成长与发展。我们尊重每次合作的机会与挑战，不断精进，力求完美。团队秉承专注、专业的设计服务思维，让客户通过设计发挥产品的最大价值，并发掘无限的可能。热爱设计并坚信设计的力量让我们不断前进…</p>
+                <img src="img/about_us/about_us_01.jpg">
+                <h1 class="title_02">为什么要找三映做UI设计呢？</h1>
+                <p class="other">
+                    应用软件产品在市场上竞争激烈，需要通过界面设计来提升差异化
+                    <br/>
+                    因为常有人抱怨公司软件的界面不好看、不好用；
+                    <br/>
+                    不知道产品要怎么做才能让用户喜欢；
+                    <br/>
+                    公司没有界面设计师或资源不足，需要长期合作的界面设计伙伴；
+                    <br/>
+                    了解产品的开发流程、规格与限制，以最有效率的流程与沟通，减少重工；
+                    <br/>
+                    公司有独门技术但不确定要如何商品化；
+                    <br/>
+                    三映有丰富的UI设计经验，我们不断的在创造新的界面设计而努力，而这也正是客户所需要的；
+                    <br/>
+                    三映随时掌握业界的脉动与趋势，提供最新颖的设计；
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.1.12.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        /*
+        $('.content_nav_01>li').click(function(){
+            $(this).addClass('active')
+                    .siblings().removeClass('active');
+        })
+        */
+        $('.right_part').addClass('fadeInRight');
+        $('.content_nav_01>li').eq(0).addClass('active');
+    })
+</script>
+</html>
